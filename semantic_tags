@@ -1,0 +1,34 @@
+<DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Introduction to Semantic Tags </title>
+    </head>
+    
+    <body>
+        <header>
+            <h1> Introduction to semantic tags </h1>
+            <nav>
+                <ul>
+                    <li><a href="./first_html.html"> My first html Page </a> </li>
+                    <li><a href="#mainStory"> Click here to read </a></li>
+                    <li><a href="#contact"> Click here to contact </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+
+        <aside>
+            <p> HELLOLOLOL </p>
+        </aside>
+
+
+        <footer>
+
+        </footer>
+
+
+    </body>
+</html>

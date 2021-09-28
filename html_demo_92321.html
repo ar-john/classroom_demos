@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo on HTML</title>
+    <script src="https://kit.fontawesome.com/eaa876c589.js" crossorigin="anonymous"></script>
+
+</head>
+<!-- He says to make sure to start adding id tags to my elements-->
+<body>
+
+    <header id="page_header">
+        <nav id="nav_bar">
+            <h1>Demo on HTML Multimedia Elements and More</h1>
+            
+            <menu>
+                <li><a href="#multimedia"> HTML Multimedia</a></li>
+                <li><a href="#tables"> HTML Tables</a></li>
+                <li><a href="#usefultags"> Some useful tags</a></li>
+            </menu>
+
+        </nav>
+
+        
+    </header>
+
+    <!-- THe main is used to display the MAIN content of the page. what the page is all about-->
+    <main id="page_main_content">
+        <section id="multimedia">
+            <div id="audio_files">
+                <h2>Demo of including a audio file</h2>
+                <!-- if you want to have it start at a time stamp, and the end of the link add #t= ,,
+                add a : to sepertate the specific times-->
+                <audio src="audio/file_example_MP3_2MG.mp3#t=00:30" controls >
+                    Audio file not supported by your browser.
+                    <!-- This is the text that shows if the media does not work-->
+                </audio>
+
+            </div>
+            <hr>
+            <!-- THIS HR MAKES A LINE ACROSS THE SCREEN. new line before and after -->
+            <div id="video_files">
+                <h3>Demo of including a video file</h3>
+                <!--  -->
+                <video src="videos/file_example_MOV_1280_1_4MB.mov" controls width="30%"> 
+                    Video file not supported by your browser.
+                </video>
+                <!-- this source tag is way to show video and audio. it also lets you post a photo gallery when u use the source tag in the picture tag-->
+               <!-- <video>
+                    <source media="(min-width: )" srcset="">
+                </video> -->
+            </div>
+
+        </section>
+
+        <section id="tables">
+            <h4>Demo on HTML Tables</h4>
+
+            <p>
+                Below is an example of an HTML table.
+            </p>
+            <!-- the inside of this table tag is called the container-->
+            <table id="html_table table1" border="1">
+                <!-- only have table rows - <tr>,,
+                    but the tables have cells - <td>
+                -->
+                <!-- Row 1-->
+                <tr>
+                    <!-- <th> is table header. for headings in tables lol-->
+                    <th>Menu ID</th>
+                    <th>Menu Items</th>
+                    <th>Price</th>
+                </tr>
+                <!-- Row 2-->
+                <tr>
+                    <!-- <td rowspan> or <td colspan> is a <td> attribute and spans the row or column -->
+                    <td>1</td>
+                    <td>Pizza</td>
+                    <td>$10.00</td>
+                </tr>
+                <!-- Row 3-->
+                <tr>
+                    <td>2</td>
+                    <td>Gnochhi</td>
+                    <td>$12.99</td>
+                </tr>
+            </table>
+
+            <table id="test_table" border="1">
+                <tr>
+                    <th>Child</th>
+                    <th>Parents</th>
+                </tr>
+                <!-- <td rowspan> or <td colspan> is a <td> attribute and spans the row or column,,
+                    this is an example of the row span and col span. when you know and spot is being occupied,,
+                then you need to skip over that one in your code -->
+                <tr>
+                    <td rowspan="2">Simon Cowell</td>
+                    <td>Roger Cowell</td>
+                </tr>
+
+                <tr>
+                    <td colspan="1">Brenda Cowell</td>
+                </tr>
+
+            </table>
+        
+        </section>
+
+        <section id="usefultags">
+            <h2>Some more useful HTML tags</h2>
+            <h3>Some block tags</h3>
+            <h4>The blockquote element</h4>
+            <blockquote cite="https://google.com">
+                "YOLO" - The Internet
+            </blockquote>
+
+            <h4>The summary and details element</h4>
+            <summary>
+                Click here for match results
+                <details>Rams 50:2 Lions</details>
+            </summary>
+
+            <h3>Some inline tags</h3>
+            <h4>cite tage</h4>
+            The homepage of OU is <cite>www.oakland.edu</cite>
+
+            <h4>the abbreviation tag</h4>
+            Few of the course code in OU are <abbr title="Computer Science">CSI</abbr>
+
+            <h4>Subscript and superscritpt</h4>
+            <p>a <sup>2</sup> + b <sup>2</sup> +2a*b = (a+b)<sup>2</sup></p>
+            <p>the molecular formular of water is H<sub>2</sub>0</p>
+
+            <h4>the code element</h4>
+            <code>C++ Code</code><br>
+            <code>
+                cout << Hello, World
+            </code>
+
+            <h4>time tag</h4>
+            Classes start this Fall from <time datetime="2021-09-02">SEP 02</time>
+
+            <h3>Tags that require javaScript to be fully functional</h3>
+            <h4>Button tag</h4>
+            <a href="#page_header">
+                <button type="menu">Go to top</button>
+            </a>
+            
+            <h4>The bdo tag</h4> <!-- the bi directional something something-->
+            <bdo dir="ltr">This is left to right</bdo>
+            <br><bdo dir="rtl">This is the right left</bdo>
+
+            <h4>the iframe element</h4>
+            <iframe src="https://www.oakland.edu" frameborder="1" width="30%">
+                Blah blah blah blah
+            
+            </iframe>
+
+            <h4> The progress and meter elements</h4>
+            <h5>The progress element</h5>
+
+            <label for="survey_progress">Survey Progress</label>
+            <progress id="survey_progress" min=2 max=10 value=7>0.7</progress>
+
+        </section>
+
+
+    </main>
+
+    <footer id="page_footer">
+        <!-- block vs inline tag. elements of block type add new lines,,
+        these are inline tags,,
+        address,,-->
+
+        <address>
+            115, Library Drive, Engineering Center <br>
+            Oakland University Auburn Hills, MI
+        </address>
+
+
+    </footer>
+    
+</body>
+</html>

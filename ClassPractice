@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Hello </title>
+    </head>
+
+<body>
+    <h1> This is my heading </h1>
+    
+    <div>
+        <h2> this is a heading in the div tag</h2>
+        <p> this is a paragraph in the div tag</p>
+
+    </div>
+    
+    <p> yall blow. blah blah blah blah blah
+        blah blah blah </p>
+
+    <a href= "https://www.oakland.edu"> oakland </a>
+    </body>
+
+    </html>
